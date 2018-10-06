@@ -64,3 +64,13 @@ bot.on ('message', message =>{
     if(message.content === 'YouDeadMan')
     message.channel.send("Cette personne te nique voilament");      
 });      
+
+bot.on ('message', message =>{
+    if(message.content === 'TumeurBot')
+    message.channel.send("Oui");      
+});
+
+bot.on ('message', message =>{
+    if(message.content === 'TumeurBot')
+    message.channel.send("**Je me soumet à votre grandeur**");      
+});   
