@@ -67,7 +67,5 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content.startsWith('*help'))
   message.author.send("Les commandes: ",
-  "*help = s'a sert a afficher ca pédé.",
-  "*ban = s'a c'est pour les admin toi tes pas admin fdp",
-  "*kick = la meme que au dessus connard");
+  "*help = s'a sert a afficher ca pédé.")
 })
