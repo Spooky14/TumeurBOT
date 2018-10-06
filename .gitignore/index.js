@@ -75,25 +75,3 @@ bot.on ('message', message =>{
     message.channel.send("**Je me soumet à votre grandeur**");      
 });   
 
-bot.on ('message', message =>{
-    if(message.content.sartWith('*help')
-    message.reply('Les commande vont etre envoyer un message privé :)')
-)};
-
-bot.on ('message', message =>{
-    if(message.content.sartWith('*help')
-    message.author.send('Voici la liste des commande :')
-)};
-
-bot.on ('message', message =>{
-    if(message.content.sartWith('*help')
-    message.author.send('*help = Ca affiche ça.')
-)};
-bot.on ('message', message =>{
-    if(message.content.sartWith('*help')
-    message.author.send('*kick = Une commande pour kick les gens.')
-)};
-bot.on ('message', message =>{
-    if(message.content.sartWith('*help')
-    message.author.send('*ban = Une commande pour bannir les gens.')
-)};  
