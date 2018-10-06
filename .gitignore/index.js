@@ -69,5 +69,5 @@ bot.on('message', message => {
   message.author.send("Les commandes: ",
   "*help = s'a sert a afficher ca pédé.",
   "*ban = s'a c'est pour les admin toi tes pas admin fdp",
-  "*kick = la meme que au dessus connard")
+  "*kick = la meme que au dessus connard");
 })
