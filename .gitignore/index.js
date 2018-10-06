@@ -2,9 +2,8 @@ const Discord = require ('discord.js');
 const talkedRecently = new Set();
 const fs = require ('fs');
 var bot = new Discord.Client();
-
-
-bot.login('NDg3OTM3NTEyMzk3MDc4NTUw.Dna7eQ.JyB-v8gMnpUMUMUE4lCzp6hZ3cs');
+const token = process.env.token;
+bot.login(token);
 
 
 bot.on('ready',() => {
