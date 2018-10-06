@@ -62,6 +62,6 @@ if (message.channel.permissionsFor(message.member).hasPermission("BAN_MEMBERS"))
 
 bot.on('message', message => {
   if (message.content.startsWith('*help'))
-  message.reply("Je tes envoyer les commande en mp :)")
-  message.author.send("Test")
+  message.reply("Je tes envoyer les commande en mp :)");
+  message.author.send("Test");
 })
