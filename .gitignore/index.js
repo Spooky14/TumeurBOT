@@ -61,5 +61,5 @@ if (message.channel.permissionsFor(message.member).hasPermission("BAN_MEMBERS"))
 
 bot.on('message', message => {
   if (message.content.startsWith('*ping'))
-  message.channel.send(':ping_pong:Pong! `' + `${msg.createdTimestamp - message.createdTimestamp}` + 'ms`' + ' API Latency `' + `${client.ping}` + 'ms`');
+  message.channel.send(':ping_pong:Pong!  + ${msg.createdTimestamp - message.createdTimestamp} + ms +  API Latency  + ${client.ping}` + ms');
 })
