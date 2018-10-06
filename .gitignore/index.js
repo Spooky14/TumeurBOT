@@ -59,7 +59,8 @@ if (message.channel.permissionsFor(message.member).hasPermission("BAN_MEMBERS"))
   }
 });
 
-bot.on("message", message => {
-if(message.content.startWith('YouDeadMan'))
- message.channel.send('Cette personne vous nique voilament')  
-)}
+
+bot.on ('message', message =>{
+    if(message.content === 'YouDeadMan')
+    message.channel.send("Cette personne te nique voilament");      
+});      
