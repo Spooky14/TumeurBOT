@@ -82,7 +82,8 @@ bot.on('message', message => {
         .setTitle('Commande')
         .setColor(0x6800FF)
         .setDescription('Bonne journée')
-        .setDescription('dedcx')
+        .setTitle('Bite')
+        .setDescription('heathly')
       message.channel.send(embed);
     }
   });
