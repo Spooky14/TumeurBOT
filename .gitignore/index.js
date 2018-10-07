@@ -82,6 +82,6 @@ bot.on('message', message => {
       const embed = new RichEmbed()
         .setTitle('Commandes :')
         .setColor(0x6800FF)
-      message.reply(embed);
+      message.channel.send(embed);
     }
-  });
+});
