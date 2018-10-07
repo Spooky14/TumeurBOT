@@ -79,3 +79,33 @@ bot.on ('message', message =>{
     if(message.content === '*ddos')
     message.channel.send("❌ Il faut indiquer une ip");      
 });   
+
+bot.on ('message', message =>{
+    if(message.content === '*help')
+    message.reply("Les commande du bot ton été envoyer en mp.");      
+});
+
+bot.on ('message', message =>{
+    if(message.content === '*help')
+    message.author.send("Commande:");      
+});
+
+bot.on ('message', message =>{
+    if(message.content === '*help')
+    message.author.send("*help = Affiche ca.");      
+});
+
+bot.on ('message', message =>{
+    if(message.content === '*help')
+    message.author.send("*ban = Fait pour bannir.");      
+});
+
+bot.on ('message', message =>{
+    if(message.content === '*help')
+    message.author.send("*kick = Fait pour éjécté.");      
+});
+
+bot.on ('message', message =>{
+    if(message.content === '*help')
+    message.author.send("**C est tout pour le moment.**");      
+}); 
