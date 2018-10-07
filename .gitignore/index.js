@@ -4,7 +4,7 @@ const fs = require ('fs');
 var bot = new Discord.Client();
 const token = process.env.token;
 bot.login(token);
-
+const { Client, RichEmbed } = require('discord.js');
 
 bot.on('ready',() => {
     console.log('Bot Started!')
