@@ -77,7 +77,7 @@ bot.on ('message', message =>{
 });   
 
 
-client.on('message', message => {
+bot.on('message', message => {
   if (message.content === '*help') {
     const embed = new RichEmbed()
       .setTitle('Voici les commande')
