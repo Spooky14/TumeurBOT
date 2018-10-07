@@ -5,7 +5,7 @@ var bot = new Discord.Client();
 const token = process.env.token;
 bot.login(token);
 
-const discordEmbed = new Discord.RichEmbed()
+const discordEmbed = new Discord.RichEmbed
 
 bot.on('ready',() => {
     console.log('Bot Started!')
