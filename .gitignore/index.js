@@ -78,10 +78,10 @@ bot.on ('message', message =>{
 
 
 bot.on('message', message => {
-  if (message.content === '*help') {
-      .setTitle('Voici les commande')
-      .setColor(0x6800FF)
-      .setDescription('Bonne journée a toi.');
-    message.channel.send(embed);
-  }
-});
+    if (message.content === 'help') {
+      const embed = new RichEmbed()
+        .setTitle('Commandes :')
+        .setColor(0x6800FF)
+      message.reply(embed);
+    }
+  });
