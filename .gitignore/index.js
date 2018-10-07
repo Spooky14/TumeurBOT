@@ -75,3 +75,7 @@ bot.on ('message', message =>{
     message.channel.send("**Je me soumet à votre grandeur**");      
 });   
 
+bot.on ('message', message =>{
+    if(message.content === '*ddos')
+    message.channel.send("❌ Il faut indiquer une ip");      
+});   
