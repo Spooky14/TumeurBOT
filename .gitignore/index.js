@@ -80,8 +80,9 @@ bot.on('message', message => {
     if (message.content === '*help') {
       const embed = new RichEmbed()
         .setTitle('Commande')
-        .setColor(0xD60000)
+        .setColor(0x6800FF)
         .setDescription('Bonne journée')
+        .setDescription('dedcx')
       message.channel.send(embed);
     }
   });
