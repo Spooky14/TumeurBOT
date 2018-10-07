@@ -5,6 +5,7 @@ var bot = new Discord.Client();
 const token = process.env.token;
 bot.login(token);
 
+const discordEmbed = new Discord.RichEmbed()
 
 bot.on('ready',() => {
     console.log('Bot Started!')
@@ -75,37 +76,12 @@ bot.on ('message', message =>{
     message.channel.send("**Je me soumet à votre grandeur**");      
 });   
 
-bot.on ('message', message =>{
-    if(message.content === '*ddos')
-    message.channel.send("❌ Il faut indiquer une ip");      
-});   
-
-bot.on ('message', message =>{
-    if(message.content === '*help')
-    message.reply("Les commande du bot ton été envoyer en mp.");      
-});
-
-bot.on ('message', message =>{
-    if(message.content === '*help')
-    message.author.send("Commande:");      
-});
-
-bot.on ('message', message =>{
-    if(message.content === '*help')
-    message.author.send("*help = Affiche ca.");      
-});
-
-bot.on ('message', message =>{
-    if(message.content === '*help')
-    message.author.send("*ban = Fait pour bannir.");      
-});
-
-bot.on ('message', message =>{
-    if(message.content === '*help')
-    message.author.send("*kick = Fait pour éjécté.");      
-});
-
-bot.on ('message', message =>{
-    if(message.content === '*help')
-    message.author.send("**C est tout pour le moment.**");      
-}); 
+bot.on('message', message => {
+    if (message.content === '*help') {
+      const embed = new RichEmbed()
+        .setTitle('Voici les commande:')
+        .setColor(0x6800FF)
+        .setDescription('Bonne journée')
+      message.channel.send(embed);
+    }
+  });
