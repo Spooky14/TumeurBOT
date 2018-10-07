@@ -79,11 +79,8 @@ bot.on ('message', message =>{
 bot.on('message', message => {
     if (message.content === '*help') {
       const embed = new RichEmbed()
-        .setTitle('Commande')
-        .setColor(0x6800FF)
-        .setDescription('Bonne journée')
-        .setTitle('Bite')
-        .setDescription('heathly')
+        .setTitle('❌ En dévloppement')
+        .setColor(0x6800FF)    
       message.channel.send(embed);
     }
   });
