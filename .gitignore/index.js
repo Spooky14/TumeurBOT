@@ -76,11 +76,13 @@ bot.on ('message', message =>{
     message.channel.send("**Je me soumet à votre grandeur**");      
 });   
 
-bot.on('message', message => {
-    if (message.content === '*help') {
-        .setTitle('Voici les commande:')
-        .setColor(0x6800FF)
-        .setDescription('Bonne journée')
-      message.channel.send(embed);
-    }
-  });
+
+client.on('message', message => {
+  if (message.content === '*help') {
+    const embed = new RichEmbed()
+      .setTitle('Voici les commande')
+      .setColor(0x6800FF)
+      .setDescription('Bonne journée a toi.');
+    message.channel.send(embed);
+  }
+});
