@@ -77,10 +77,11 @@ bot.on ('message', message =>{
 
 
 bot.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '*help') {
       const embed = new RichEmbed()
-        .setTitle('Commandes :')
-        .setColor(0x6800FF)
+        .setTitle('Commande')
+        .setColor(0xD60000)
+        .setDescription('Bonne journée')
       message.channel.send(embed);
     }
-});
+  });
