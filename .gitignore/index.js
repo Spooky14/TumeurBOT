@@ -77,10 +77,22 @@ bot.on ('message', message =>{
 
 
 bot.on('message', message => {
+    if (message.content === '*help'){
+      const embed = new RichEmbed()
+      .setTitle('✔️ Les commande ton été envoyer en mp.')
+      .setColor(0x00FF8F)
+    message.reply(embed)
+    }
+  });
+
+bot.on('message', message => {
     if (message.content === '*help') {
       const embed = new RichEmbed()
-        .setTitle('❌ En dévloppement')
-        .setColor(0x6800FF)    
-      message.channel.send(embed);
+        .setTitle('Voici la list des commande:')
+        .setColor(0x6800FF)
+        .addField('⚠️Modération⚠️', '*ban = Banni un personne.','*kick = Ejecte une personne.')
+        .setDescription("C'est tout pour le moment.")
+        .setTimestamp()    
+      message.author.send(embed)
     }
   });
