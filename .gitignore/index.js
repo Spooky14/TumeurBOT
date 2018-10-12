@@ -87,6 +87,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === '*help') {
+        const embed = new RichEmbed()
         .setTitle('Voici la list des commande:')
         .setColor(0x6800FF)
         .addField('⚠️Modération⚠️', '*ban = Banni un personne.','*kick = Ejecte une personne.')
