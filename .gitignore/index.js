@@ -91,6 +91,7 @@ bot.on('message', message => {
         .setTitle('Voici la list des commande:')
         .setColor(0x6800FF)
         .setDescription("C'est tout pour le moment.")
+        .setThumball('${bot.user.displayAvatarURL}')
         .setTimestamp()
       message.author.send(embed)
     }
