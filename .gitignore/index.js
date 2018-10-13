@@ -90,9 +90,10 @@ bot.on('message', message => {
         const embed = new RichEmbed()
         .setTitle('Voici la list des commande:')
         .setColor(0x6800FF)
-        .addField('⚠️Modération⚠️', '*ban = Banni un personne.','*kick = Ejecte une personne.')
         .setDescription("C'est tout pour le moment.")
-        .setTimestamp()    
+        .addField('⚠️Modération⚠️', '*ban = Banni un personne.','*kick = Ejecte une personne.')
+        .setTimestamp()
+        .setFooter('Test')
       message.channel.send(embed)
     }
   });
