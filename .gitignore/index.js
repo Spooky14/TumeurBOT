@@ -91,7 +91,6 @@ bot.on('message', message => {
         .setTitle('Voici la list des commande:')
         .setColor(0x6800FF)
         .setDescription("C'est tout pour le moment.")
-        .addField('⚠️Modération⚠️', '*ban = Banni un personne.','*kick = Ejecte une personne.')
         .setTimestamp()
         .setFooter('Test')
       message.channel.send(embed)
