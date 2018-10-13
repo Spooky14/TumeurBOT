@@ -92,7 +92,6 @@ bot.on('message', message => {
         .setColor(0x6800FF)
         .setDescription("C'est tout pour le moment.")
         .setTimestamp()
-        .setFooter('Test')
-      message.channel.send(embed)
+      message.author.send(embed)
     }
   });
