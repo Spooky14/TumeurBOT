@@ -93,6 +93,6 @@ bot.on('message', message => {
         .addField('⚠️Modération⚠️', '*ban = Banni un personne.','*kick = Ejecte une personne.')
         .setDescription("C'est tout pour le moment.")
         .setTimestamp()    
-      message.author.send(embed)
+      message.channel.send(embed)
     }
   });
