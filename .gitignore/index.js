@@ -86,13 +86,14 @@ bot.on('message', message => {
   });
 
 bot.on('message', message => {
-    if (message.content === '*help') {
-        const embed = new RichEmbed()
-        .setTitle('Voici la list des commande:')
-        .setColor(0x6800FF)
-        .setDescription("C'est tout pour le moment.")
+    if(message.content === '*help'){
+        var help_embed = new Discord.RichEmbed()
+        .setColor('#34006E')
+        .setTitle('Commande:')
+        .addField('Modération', '*ban = Pour bannir une personne', '*kick = Pour éjécté une personne.')
+        .setFooter('Aide')
         .setThumbnail('${bot.user.displayAvatarURL}')
         .setTimestamp()
-      message.author.send(embed)
+        message.channel.sendMessage(help_embed);
     }
-  });
+});
