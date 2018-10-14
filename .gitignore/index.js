@@ -90,7 +90,6 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor('#34006E')
         .setTitle('Commande:')
-        .addField('Modération', '*ban = Pour bannir une personne', '*kick = Pour éjécté une personne.')
         .setFooter('Aide')
         .setThumbnail('${bot.user.displayAvatarURL}')
         .setTimestamp()
