@@ -31,7 +31,7 @@ bot.on('message', message => {
 if(message.content === pr + "help"){
   var help = new Discord.RichEmbed()
   .setColor("#96003D")
-  .setImage(bot.displayAvatarURL)
+  .setImage(`${bot.displayAvatarURL}`)
   .setAuthor("Help")
   .setTitle("Voici mes commande:")
   .setDescription("Modération:")
