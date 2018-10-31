@@ -24,7 +24,6 @@ bot.on('message', message => {
     var helpd = new Discord.RichEmbed()
     .setColor("#96003d")
     .setTitle(":white_check_mark: Les commande ton été envoyer en mp")
-    .setTimestamp()
     message.reply(helpd);
   }});
 
