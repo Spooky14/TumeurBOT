@@ -44,7 +44,8 @@ bot.on('message', message => {
   if(message.content === pr + "whois"){
     var whois = new Discord.RichEmbed()
     .setColor("#96003d")
-    .setTitle()
+    .setTitle(":negative_squared_cross_mark: Actuellement en développement")
+    .setFooter("*whois")
     .setTimestamp()
     message.reply(whois);
   }});
