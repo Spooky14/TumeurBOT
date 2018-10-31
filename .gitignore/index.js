@@ -31,14 +31,17 @@ bot.on('message', message => {
 if(message.content === pr + "help"){
   var help = new Discord.RichEmbed()
   .setColor("#96003D")
-  .setTitle("Voici les commande :")
+  .setImage(bot.displayAvatarURL)
+  .setAuthor("Help")
+  .setTitle("Voici mes commande:")
   .setDescription("Modération:")
-  .addField("*help", "Affiche ca pd")
+  .addField("*ban", "Pour bannir des gros con")
   .addField("*kick", "Pour éjécté des petit con")
   .setFooter("*help")
   .setTimestamp()
   message.author.sendMessage(help);
 }});
+
 
 bot.on('message', message => {
   if(message.content === pr + "whois"){
