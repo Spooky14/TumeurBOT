@@ -1,98 +1,51 @@
-const Discord = require ('discord.js');
-const talkedRecently = new Set();
-const fs = require ('fs');
+const Discord = require ('discord.js')
+
 var bot = new Discord.Client();
-const token = process.env.token;
-bot.login(token);
-const { Client, RichEmbed } = require('discord.js');
+
+var pr = "*";
+
+bot.login('NTA3MTI4MzkzMTAwMjk2MTky.DrsNVw.ipsr1gP5pxgN_GdBnGdqIwqjF1g');
+
 
 bot.on('ready',() => {
-    console.log('Bot Started!')
-    bot.user.setStatus('dnd')
-    bot.user.setActivity('🌍 Faire chier la commu 🔫')
+    console.log('Je suis Good!')
+    bot.user.setStatus('online')
+    bot.user.setActivity('🔫Niquer des Maman👩‍')
 })
 
-
 bot.on('message', message => {
-  if (!message.guild) return;
-if (message.channel.permissionsFor(message.member).hasPermission("KICK_MEMBERS"))
-  if (message.content.startsWith('*kick')) {
-    const user = message.mentions.users.first();
-    if (user) {
-      const member = message.guild.member(user);
-      if (member) {
-        member.kick().then(() => {
-          message.channel.send(`✔️${user.tag} a bien été éjécté.`);
-        }).catch(err => {
-          message.channel.send('❌ Tu ne peut pas éjécté cette personne.');
-          console.error(err);
-        });
-      } else {
-        message.channel.send('❌ Cette personne ne peut etre éjécté');
-      }
-    } else {
-      message.channel.send('❌ Il faut mentionner une personne.');
-    }
+  if (message.content === 'Malediction') {
+    message.channel.send('A vos ordre monsieur 😐')
   }
 });
 
 bot.on('message', message => {
-  if (!message.guild) return;
-if (message.channel.permissionsFor(message.member).hasPermission("BAN_MEMBERS"))
-  if (message.content.startsWith('*ban')) {
-    const user = message.mentions.users.first();
-    if (user) {
-      const member = message.guild.member(user);
-      if (member) {
-        member.ban().then(() => {
-          message.channel.send(`✔️${user.tag} a bien été banni.`);
-        }).catch(err => {
-          message.channel.send('❌ Tu ne peut pas bannir cette personne.');
-          console.error(err);
-        });
-      } else {
-        message.channel.send('❌ Cette personne ne peut etre banni');
-      }
-    } else {
-      message.channel.send('❌ Il faut mentionner une personne.');
-    }
-  }
-});
-
-
-bot.on ('message', message =>{
-    if(message.content === 'YouDeadMan')
-    message.channel.send("Cette personne te nique violament");      
-});      
-
-bot.on ('message', message =>{
-    if(message.content === 'TumeurBot')
-    message.channel.send("Oui");      
-});
-
-bot.on ('message', message =>{
-    if(message.content === 'TumeurBot')
-    message.channel.send("**Je me soumet à votre grandeur**");      
-});   
-
+  if(message.content === pr + "help"){
+    var helpd = new Discord.RichEmbed()
+    .setColor("#96003d")
+    .setTitle(":white_check_mark: Les commande ton été envoyer en mp")
+    .setTimestamp()
+    message.reply(helpd);
+  }});
 
 bot.on('message', message => {
-    if (message.content === '*help'){
-      const embed = new RichEmbed()
-      .setTitle('✔️ Les commande ton été envoyer en mp.')
-      .setColor(0x00FF8F)
-    message.reply(embed)
-    }
-  });
+if(message.content === pr + "help"){
+  var help = new Discord.RichEmbed()
+  .setColor("#96003D")
+  .setTitle("Voici les commande :")
+  .setDescription("Modération:")
+  .addField("*help", "Affiche ca pd")
+  .addField("*kick", "Pour éjécté des petit con")
+  .setFooter("*help")
+  .setTimestamp()
+  message.author.sendMessage(help);
+}});
 
 bot.on('message', message => {
-    if(message.content === '*help'){
-        var help_embed = new Discord.RichEmbed()
-        .setColor('#34006E')
-        .setTitle('Commande:')
-        .setFooter('Aide')
-        .setThumbnail('${bot.user.displayAvatarURL}')
-        .setTimestamp()
-        message.channel.sendMessage(help_embed);
-    }
-});
+  if(message.content === pr + "whois"){
+    var whois = new Discord.RichEmbed()
+    .setColor("#96003d")
+    .setTitle()
+    .setTimestamp()
+    message.reply(whois);
+  }});
