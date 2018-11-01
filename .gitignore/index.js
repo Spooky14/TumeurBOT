@@ -49,6 +49,7 @@ bot.on('message', message => {
     .setTimestamp()
     message.reply(whois);
   }});
+
 bot.on('message', message => {
   if(message.content === pr + "pileface")
 
@@ -66,5 +67,6 @@ bot.on('message', message => {
   .setImage(pifa)
   .setFooter('*pileface')
   .setTimestamp()
+message.channel.send(pifa_embed)
 
 })
