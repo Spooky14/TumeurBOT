@@ -31,11 +31,13 @@ bot.on('message', message => {
 if(message.content === pr + "help"){
   var help = new Discord.RichEmbed()
   .setColor("#96003D")
-  .setTitle("Voici les commande :")
-  .setDescription("Modération:")
-  .addField("*help", "Affiche ca pd")
-  .addField("*kick", "Pour éjécté des petit con")
-  .setFooter("*help")
+  .setAuthor("Voici les commande :")
+  .setTitle("Modération:")
+  .addField("*kick", "Pour éjecté des petits con")
+  .addField("*ban", "Pour bannir des gros con")
+  .setFooter("Help")
+  .setTimestamp()
+  .setThumbnail("http://image.noelshack.com/fichiers/2018/44/4/1541086988-cdcd.png")
   message.channel.sendMessage(help);
 }});
 
