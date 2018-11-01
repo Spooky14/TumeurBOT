@@ -49,3 +49,12 @@ bot.on('message', message => {
     .setTimestamp()
     message.reply(whois);
   }});
+
+bot.on('message', message => {
+  if(message.content === pr + "help"){
+    var DOX_1 = new Discord.RichEmbed()
+    .setColor("#96003d")
+    .setTitle("Voici la liste des DOX:")
+    .addfield("DOX", "Jaque/KillerYT")
+    message.reply(DOX_1);
+  }});
