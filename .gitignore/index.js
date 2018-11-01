@@ -10,7 +10,7 @@ bot.login('NTA3MTI4MzkzMTAwMjk2MTky.DrsNVw.ipsr1gP5pxgN_GdBnGdqIwqjF1g');
 bot.on('ready',() => {
     console.log('Je suis Good!')
     bot.user.setStatus('online')
-    bot.user.setActivity('🔫Niquer des Maman👩‍')
+    bot.user.setActivity('🔫Niquer des Maman👩‍', 'Malédiction > All')
 })
 
 bot.on('message', message => {
