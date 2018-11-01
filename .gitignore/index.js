@@ -49,13 +49,22 @@ bot.on('message', message => {
     .setTimestamp()
     message.reply(whois);
   }});
-
 bot.on('message', message => {
-  if(message.content === pr + "dox"){
-    var DOX_1 = new Discord.RichEmbed()
-    .setColor("#96003d")
-    .setAuthor("Voici la liste des DOX:")
-    .setTitle("DOX:")
-    .addField("Jaque/KillerYT")
-    message.reply(DOX_1);
-  }});
+  if(message.content === pr + "pileface")
+
+  var pileface = [
+
+    "http://image.noelshack.com/fichiers/2018/44/4/1541078230-face.png",
+    "http://image.noelshack.com/fichiers/2018/44/4/1541078295-pile.png"
+  ];
+
+  var pifa = pileface[Math.floor(Math.random() * pileface.length)];
+
+  var pifa_embed = new Discord.RichEmbed()
+  .setColor('#FFB600')
+  .setTitle('Pile ou face ?')
+  .setImage(pifa)
+  .setFooter('*pileface')
+  .setTimestamp()
+
+})
