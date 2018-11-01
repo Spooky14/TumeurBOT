@@ -51,7 +51,7 @@ bot.on('message', message => {
   }});
 
 bot.on('message', message => {
-  if(message.content === pr + "help"){
+  if(message.content === pr + "dox"){
     var DOX_1 = new Discord.RichEmbed()
     .setColor("#96003d")
     .setTitle("Voici la liste des DOX:")
