@@ -49,17 +49,3 @@ bot.on('message', message => {
     .setTimestamp()
     message.reply(whois);
   }});
-
-bot.on('message', message => {
-  if(message.content === pr + "clear")
-  if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Vous n'avez pas la permission.")
-
-  let args = message.content.split(" ").slice(1);
-
-  if(!args[0]) return message.channel.send("❌ Vous devez mettre un nombre valable.")
-  message.channel.bulkDelete(args[0]).then(() => {
-    message.channel.send(`:heavy_check_mark: Vous avez suprimé ${args[0]} message.`)
- })
-
-
-});
