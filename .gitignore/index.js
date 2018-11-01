@@ -51,22 +51,15 @@ bot.on('message', message => {
   }});
 
 bot.on('message', message => {
-  if(message.content === pr + "pileface")
+  if(message.content === pr + "clear")
+  if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.channel.send("❌ Vous n'avez pas la permission.");
 
-  var pileface = [
+  let args = message.content.split(" ").slice(1);
 
-    "http://image.noelshack.com/fichiers/2018/44/4/1541078230-face.png",
-    "http://image.noelshack.com/fichiers/2018/44/4/1541078295-pile.png"
-  ];
+  if(!args[0]) return message.channel.send("❌ Vous devez mettre un nombre valable.")
+  message.channel.bulkDelete(args[0]).then(() => {
+    message.channel.send(`:heavy_check_mark: Vous avez suprimé ${args[0]} message.`);
+ })
 
-  var pifa = pileface[Math.floor(Math.random() * pileface.length)];
-
-  var pifa_embed = new Discord.RichEmbed()
-  .setColor('#FFB600')
-  .setTitle('Pile ou face ?')
-  .setImage(pifa)
-  .setFooter('*pileface')
-  .setTimestamp()
-message.channel.send(pifa_embed)
 
 })
