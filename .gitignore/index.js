@@ -37,7 +37,7 @@ if(message.content === pr + "help"){
   .addField("*ban", "Pour bannir des gros con")
   .setFooter("Help")
   .setTimestamp()
-  .setThumbnail("http://image.noelshack.com/fichiers/2018/44/4/1541086988-cdcd.png")
+  .setThumbnail("http://image.noelshack.com/fichiers/2018/44/4/1541087159-xw.png")
   message.channel.sendMessage(help);
 }});
 
