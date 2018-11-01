@@ -31,11 +31,9 @@ bot.on('message', message => {
 if(message.content === pr + "help"){
   var help = new Discord.RichEmbed()
   .setColor("#96003D")
-  .setAuthor("Help")
-  .setTitle("Voici mes commande:")
-  .setDescription("Modération:")
-  .addField("*ban", "Pour bannir des gros con")
-  .addField("*kick", "Pour éjécté des petit con")
+  .setAuthor("Voici mes commande:")
+  .setTitle("Modération")
+  .setDescription("`*ban`", "`*kick`", "`*clear`")
   .setFooter("*help")
   .setTimestamp()
   message.author.sendMessage(help);
