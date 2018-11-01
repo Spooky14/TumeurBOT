@@ -38,7 +38,7 @@ if(message.content === pr + "help"){
   .setFooter("Help")
   .setTimestamp()
   .setThumbnail("http://image.noelshack.com/fichiers/2018/44/4/1541087159-xw.png")
-  message.channel.sendMessage(help);
+  message.author.sendMessage(help);
 }});
 
 
