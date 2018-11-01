@@ -32,8 +32,9 @@ if(message.content === pr + "help"){
   var help = new Discord.RichEmbed()
   .setColor("#96003D")
   .setAuthor("Voici mes commande:")
-  .setTitle("Modération")
-  .setDescription("`*ban`", "`*kick`", "`*clear`")
+  .setTitle("Modération:")
+  .setDescription("`*ban`")
+  .addField("*ban", "*kick" , "*clear")
   .setFooter("*help")
   .setTimestamp()
   message.author.sendMessage(help);
