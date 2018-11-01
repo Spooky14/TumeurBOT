@@ -54,7 +54,8 @@ bot.on('message', message => {
   if(message.content === pr + "dox"){
     var DOX_1 = new Discord.RichEmbed()
     .setColor("#96003d")
-    .setTitle("Voici la liste des DOX:")
-    .setDescription("DOX", "Jaque/KillerYT")
+    .setAuthor("Voici la liste des DOX:")
+    .setTitle("DOX:")
+    .addField("Jaque/KillerYT")
     message.reply(DOX_1);
   }});
